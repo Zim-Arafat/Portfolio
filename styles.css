@@ -21,9 +21,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center content vertically */
-  align-items: center;     /* Center content horizontally */
+  align-items: flex-start;     /* Center content horizontally */
+  padding-left: 6vw;       /* add left padding for spacing */
   background: url('hero-image.jpg') center 35%/cover no-repeat fixed;
   animation: zoomIn 1.2s cubic-bezier(0.4, 0.2, 0.2, 1);
+  background-position: 65% 35%; /* shift image to keep face visible */
 }
 
 @keyframes zoomIn {
@@ -71,6 +73,8 @@ body {
   align-items: flex-start;
   /* Remove margin-top and margin-left for true centering */
   max-width: 700px;
+  margin-left: 0; /* remove if present */
+  margin-top: 0;  /* remove if present */
 }
 .accent-line {
   width: 5px;
@@ -133,7 +137,9 @@ body {
 }
 @media (max-width: 600px) {
   .hero {
-    background-position: 60% 35%; /* Keep face visible on mobile */
+    align-items: center; /* re-center on mobile */
+    padding-left: 0;     /* remove left padding */
+    background-position: 60% 35%; /* adjust as needed for face */
   }
   .social-header {
     top: 1.2rem;
@@ -141,10 +147,9 @@ body {
     gap: 1rem;
   }
   .hero-content {
-    margin-top: 0; /* Remove margin for centering */
-    margin-left: 0; /* Remove margin for centering */
-    flex-direction: row;
     max-width: 98vw;
+    /* Optionally, center text on mobile for better readability */
+    align-items: flex-start;
   }
   .accent-line {
     min-height: 60px;
