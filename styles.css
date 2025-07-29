@@ -20,8 +20,8 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
+  justify-content: center; /* Center content vertically */
+  align-items: center;     /* Center content horizontally */
   background: url('hero-image.jpg') center 35%/cover no-repeat fixed;
   animation: zoomIn 1.2s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
@@ -69,8 +69,7 @@ body {
   z-index: 2;
   display: flex;
   align-items: flex-start;
-  margin-top: 12vh;
-  margin-left: 8vw;
+  /* Remove margin-top and margin-left for true centering */
   max-width: 700px;
 }
 .accent-line {
@@ -122,7 +121,7 @@ body {
 /* Responsive Styles */
 @media (max-width: 900px) {
   .hero-content {
-    margin-left: 4vw;
+    /* Remove margin-left for centering */
     max-width: 90vw;
   }
   .accent-line {
@@ -142,8 +141,8 @@ body {
     gap: 1rem;
   }
   .hero-content {
-    margin-top: 7vh;
-    margin-left: 5vw;
+    margin-top: 0; /* Remove margin for centering */
+    margin-left: 0; /* Remove margin for centering */
     flex-direction: row;
     max-width: 98vw;
   }
