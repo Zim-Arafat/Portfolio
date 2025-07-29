@@ -84,25 +84,27 @@ body {
   color: #fff;
 }
 .text-block h1 {
-  font-size: 3.2rem;
+  font-size: 3.4rem;
   font-weight: 800;
-  margin-bottom: 0.5rem;
-  line-height: 1.1;
+  margin-bottom: 1.4rem; /* Increased spacing below h1 */
+  line-height: 1.08;
   letter-spacing: -1px;
   display: flex;
   align-items: center;
 }
 .text-block h2 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 400;
-  margin-bottom: 1.2rem;
   color: #e0e0e0;
+  margin-bottom: 0.9rem; /* More space below h2 */
 }
 .text-block p {
-  font-size: 1.1rem;
+  font-size: 1.08rem;
+  font-weight: 300;
   color: #d0d0d0;
-  line-height: 1.6;
+  line-height: 1.7;
   max-width: 420px;
+  margin-bottom: 0;
 }
 
 .copyright {
